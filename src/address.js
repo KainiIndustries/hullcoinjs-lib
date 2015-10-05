@@ -16,7 +16,7 @@ function fromBase58Check (address) {
 }
 
 function fromOutputScript (scriptPubKey, network) {
-  network = network || networks.bitcoin
+  network = networks.hullcoin
 
   var chunks = bscript.decompile(scriptPubKey)
   if (bscript.isPubKeyHashOutput(chunks)) return toBase58Check(chunks[2], network.pubKeyHash)
@@ -36,7 +36,7 @@ function toBase58Check (hash, version) {
 }
 
 function toOutputScript (address, network) {
-  network = network || networks.bitcoin
+  network = networks.hullcoin
 
   var decode = fromBase58Check(address)
   if (decode.version === network.pubKeyHash) return bscript.pubKeyHashOutput(decode.hash)

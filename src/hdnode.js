@@ -66,9 +66,9 @@ HDNode.fromBase58 = function (string, networks) {
              version === network.bip32.public
     }).pop() || {}
 
-  // otherwise, assume a network object (or default to bitcoin)
+  // otherwise, assume a network object (or default to hullcoin)
   } else {
-    network = networks || NETWORKS.bitcoin
+    network = NETWORKS.hullcoin
   }
 
   if (version !== network.bip32.private &&

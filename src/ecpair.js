@@ -35,7 +35,7 @@ function ECPair (d, Q, options) {
   }
 
   this.compressed = options.compressed === undefined ? true : options.compressed
-  this.network = options.network || NETWORKS.bitcoin
+  this.network = NETWORKS.hullcoin
 }
 
 Object.defineProperty(ECPair.prototype, 'Q', {
@@ -58,7 +58,7 @@ ECPair.fromPublicKeyBuffer = function (buffer, network) {
 }
 
 ECPair.fromWIF = function (string, network) {
-  network = network || NETWORKS.bitcoin
+  network = NETWORKS.hullcoin
   var buffer = bs58check.decode(string)
 
   if (types.Array(network)) {
