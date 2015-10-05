@@ -37,15 +37,6 @@
       "url": "https://twitter.com/bushstar"
     }
   ],
-  "scripts": {
-    "coverage": "mocha --require blanket -R travis-cov",
-    "coverage-local": "mocha --require blanket -R html-cov",
-    "integration": "mocha test/integration/",
-    "prepublish": "npm run test",
-    "standard": "standard",
-    "test": "npm run standard && npm run unit",
-    "unit": "mocha"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/KainiIndustries/hullcoinjs-lib.git"
