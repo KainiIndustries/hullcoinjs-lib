@@ -1,7 +1,7 @@
 {
   "name": "hullcoinjs-lib",
   "version": "2.1.1",
-  "description": "Client-side Bitcoin JavaScript library",
+  "description": "Client-side Hullcoin JavaScript library",
   "main": "./src/index.js",
   "keywords": [
     "bitcoin",
