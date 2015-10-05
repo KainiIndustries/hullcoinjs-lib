@@ -5,6 +5,7 @@
   "main": "./src/index.js",
   "keywords": [
     "bitcoin",
+    "hullcoin",
     "browser",
     "client",
     "library"
