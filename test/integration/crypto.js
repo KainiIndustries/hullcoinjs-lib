@@ -10,7 +10,7 @@ var crypto = require('crypto')
 var ecurve = require('ecurve')
 var secp256k1 = ecurve.getCurveByName('secp256k1')
 
-describe('bitcoinjs-lib (crypto)', function () {
+describe('hullcoinjs-lib (crypto)', function () {
   it('can generate a single-key stealth address', function () {
     var G = secp256k1.G
     var n = secp256k1.n

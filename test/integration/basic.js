@@ -4,7 +4,7 @@ var assert = require('assert')
 var bigi = require('bigi')
 var bitcoin = require('../../')
 
-describe('bitcoinjs-lib (basic)', function () {
+describe('hullcoinjs-lib (basic)', function () {
   it('can generate a random bitcoin address', function () {
     // for testing only
     function rng () { return new Buffer('zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz') }

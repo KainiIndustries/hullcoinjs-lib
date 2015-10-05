@@ -4,7 +4,7 @@ var assert = require('assert')
 var bitcoin = require('../../')
 var blockchain = require('./_blockchain')
 
-describe('bitcoinjs-lib (advanced)', function () {
+describe('hullcoinjs-lib (advanced)', function () {
   it('can sign a Bitcoin message', function () {
     var keyPair = bitcoin.ECPair.fromWIF('5KYZdUEo39z3FPrtuX2QbbwGnNP5zTd7yyr2SC1j299sBCnWjss')
     var message = 'This is an example of a signed message.'
